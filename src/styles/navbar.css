@@ -1,0 +1,142 @@
+/* Navbar Styling */
+
+.navbar {
+    height: 15vh;
+    /* background-color: #111111; */
+    /* Slightly dark background for elegance */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    /* Ensure proper space on sides */
+    /* border-bottom: 1px solid #333; */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: padding 0.3s ease;
+}
+
+
+/* Navbar Logo Styling */
+
+.navbar-logo {
+    font-size: 2rem;
+    /* Slightly larger logo for emphasis */
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    /* Make logo clickable */
+}
+
+
+/* Navbar Links Container */
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 2rem;
+    /* Push links towards the right */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    /* Indicate clickability */
+}
+
+.navbar-links a:hover {
+    /* color: #ff5733; */
+    /* Highlight color on hover for better visibility */
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+
+/* Navbar Login Button */
+
+.navbar-login-button {
+    padding: 0.7rem 2rem;
+    /* Increased padding for button size */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    /* Rounded pill shape for modern look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-login-button:hover {
+    background-color: #ffffff;
+    /* Inverse button effect */
+    color: #111111;
+    /* Dark text on hover */
+    transform: scale(1.1);
+    /* Slightly enlarged button on hover */
+}
+
+
+/* Navbar Burger (Hamburger) Button */
+
+.navbar-burger {
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+        /* Stack nav items vertically with spacing */
+    }
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        /* Ensure they take full width */
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+        /* Show menu when active */
+    }
+    .navbar-links a {
+        text-align: center;
+    }
+    .navbar-login-button {
+        margin-top: 1rem;
+        width: 100%;
+        /* Make the login button full width on smaller screens */
+    }
+    .navbar-burger {
+        display: flex;
+        /* Show burger icon on small screens */
+    }
+}

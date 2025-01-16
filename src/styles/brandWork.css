@@ -1,0 +1,181 @@
+/* Brand Work Section Container */
+
+.brand-work-container {
+    height: 85vh;
+    background-color: #000000;
+    /* Matches hero section theme */
+    color: #ffffff;
+    /* White text for contrast */
+    /* padding: 3rem; */
+    /* text-align: center; */
+    /* Center aligns text content */
+    display: flex;
+    flex-direction: row;
+    gap: 25rem;
+    /* Ensure spacing between heading and description */
+    justify-content: space-evenly;
+    /* align-items: center; */
+    border-radius: 8px;
+    /* Adds a modern look */
+    /* margin-top: 220px; */
+}
+
+
+/* Brand Work Heading */
+
+.brand-work-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    font-size: 4rem;
+    /* Large, prominent heading */
+    font-weight: 500;
+    /* Bold for emphasis */
+    /* text-transform: uppercase; */
+    /* Adds a professional tone */
+    letter-spacing: 2px;
+    max-width: 500px;
+    /* Enhances readability */
+    margin: 0;
+}
+
+
+/* Brand Work Description */
+
+.brand-work-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: bisque; */
+    font-size: 1.5rem;
+    /* Comfortable text size for reading */
+    line-height: 1.8;
+    /* Improves readability with spacing between lines */
+    font-weight: 400;
+    /* Normal font weight */
+    max-width: 500px;
+    /* Restrict width for readability */
+    /* text-align: center; */
+    margin: 0 auto;
+    /* padding: 2rem; */
+    /* Center horizontally */
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+        /* Initial shrink effect */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        /* Normal size */
+    }
+}
+
+
+/* Animation initial state */
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+/* When the element is visible */
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: scale(1);
+    animation: fadeInScale 0.6s ease forwards;
+}
+
+
+/* Brand Work Section Container */
+
+.brand-work-container {
+    height: 85vh;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    gap: 25rem;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    padding: 3rem;
+    /* Restore padding for better spacing */
+    align-items: center;
+    /* Center the content vertically */
+    overflow: hidden;
+    /* Prevents content overflow during animation */
+}
+
+
+/* Brand Work Heading */
+
+.brand-work-heading {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    max-width: 500px;
+    text-align: center;
+    /* Center-aligns the heading */
+    margin: 0;
+}
+
+
+/* Brand Work Description */
+
+.brand-work-description {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-weight: 400;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .brand-work-container {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+        /* Less spacing for smaller viewports */
+    }
+    .brand-work-heading {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    .brand-work-description {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .brand-work-container {
+        padding: 2rem;
+        /* Reduced padding for smaller screens */
+        gap: 1rem;
+        /* Less spacing on smaller viewports */
+    }
+    .brand-work-heading {
+        font-size: 2rem;
+        /* Scales heading for mobile devices */
+        letter-spacing: 1px;
+    }
+    .brand-work-description {
+        font-size: 1rem;
+        /* Slightly smaller text size */
+        line-height: 1.6;
+    }
+}

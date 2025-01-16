@@ -1,0 +1,160 @@
+/* Footer Container */
+
+.footer {
+    color: #ffffff;
+    padding: 10rem 0rem 0rem 0rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: 85vh;
+}
+
+
+/* Footer Header */
+
+.footer-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+/* Call to Action */
+
+.footer-cta {
+    font-size: 6rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Login Button */
+
+.footer-login-button {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-login-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+
+/* Footer Navigation Links */
+
+.footer-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+
+/* Footer Metadata */
+
+.footer-meta {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Footer Metadata Links */
+
+.footer-meta-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-meta-link:hover {
+    color: #007bff;
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    /* Overall Footer Adjustments */
+    .footer {
+        padding: 1.5rem;
+        gap: 2rem;
+        /* Adjusted gap for better spacing */
+    }
+    /* CTA Section Adjustment */
+    .footer-cta {
+        font-size: 2rem;
+        /* Reduce font size for responsiveness */
+    }
+    /* Login Button Adjustments */
+    .footer-login-button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        /* Slightly reduce the font size */
+    }
+    /* Footer Links and Metadata Adjustments */
+    .footer-link,
+    .footer-meta-link {
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
+    }
+    /* Footer Navigation */
+    .footer-navigation {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        gap: 1rem;
+        /* Added gap for spacing */
+        align-items: center;
+    }
+    /* Footer Metadata Adjustment */
+    .footer-meta {
+        width: 100%;
+        /* Ensure metadata occupies full width on smaller screens */
+        justify-content: center;
+        /* Center align metadata items */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further reduce padding and font size for extra small screens */
+    .footer {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    .footer-cta {
+        font-size: 1.5rem;
+        /* Even smaller font for better readability */
+    }
+    .footer-login-button {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+        /* Smaller padding on very small screens */
+    }
+    .footer-link,
+    .footer-meta-link {
+        font-size: 0.8rem;
+        /* Smaller font size for mobile screens */
+    }
+}

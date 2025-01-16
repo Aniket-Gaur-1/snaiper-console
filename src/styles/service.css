@@ -1,0 +1,164 @@
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Initial state for animations */
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    animation-fill-mode: forwards;
+}
+
+
+/* Animation triggered when the element is visible */
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: scale(1);
+    animation: fadeInScale 0.6s ease forwards;
+}
+
+
+/* Services Section */
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.services-heading {
+    text-align: center;
+    padding: 0rem 14rem 2rem 14rem;
+    font-size: 2.5rem;
+}
+
+.services-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-basis: 30%;
+    /* Makes cards take up around 1/4th width */
+    box-sizing: border-box;
+}
+
+
+/* Service Card Hover */
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+
+/* Service Card Title */
+
+.service-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+/* Service Card Description */
+
+.service-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+
+/* Service Link */
+
+.service-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0056b3;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+    .services-heading {
+        padding: 0 4rem;
+        /* Reduce horizontal padding */
+        font-size: 2rem;
+        /* Adjust heading size */
+    }
+    .services-gallery {
+        gap: 1.5rem;
+        /* Adjust spacing between cards */
+    }
+    .service-card {
+        flex-basis: 30%;
+        /* Make each card take up 1/3rd of the container */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-heading {
+        padding: 0 2rem;
+        /* Reduce padding */
+        font-size: 1.8rem;
+        /* Further reduce font size */
+    }
+    .services-gallery {
+        gap: 1rem;
+        /* Tighten the gap between cards */
+    }
+    .service-card {
+        flex-basis: 45%;
+        /* Make each card take up half width */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-heading {
+        padding: 0 1rem;
+        /* Minimal padding for very small screens */
+        font-size: 1.5rem;
+        /* Smaller heading font */
+    }
+    .services-gallery {
+        gap: 1rem;
+        flex-direction: column;
+        /* Stack cards vertically */
+        align-items: center;
+        /* Center cards */
+    }
+    .service-card {
+        flex-basis: 90%;
+        /* Make each card take almost full width */
+    }
+}
