@@ -5,14 +5,17 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
+import Process from "./components/Process";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+
       <HeroSection />
       <Services />
       <BrandWork />
+      <Process />
       <Founder />
       <Footer />
     </div>

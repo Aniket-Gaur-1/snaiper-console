@@ -1,0 +1,37 @@
+ .process-container {
+     display: flex;
+     flex-direction: row;
+     height: auto;
+     /* background-color: bisque; */
+ }
+ 
+ .process-line {
+     width: 70%;
+     /* background-color: blue; */
+ }
+ 
+ .process-item {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+     height: 85vh;
+     padding: 0rem 6rem 0rem 6rem;
+ }
+ 
+ .process-step-number {
+     font-size: 8rem;
+     font-weight: 900;
+ }
+ 
+ .process-step-title {
+     font-size: 3rem;
+     font-weight: 800;
+ }
+ 
+ .process-step-description {
+     /* background-color: darkblue; */
+     margin: 0rem 2rem 0rem 2rem;
+     padding: 0rem 2rem 0rem 2rem;
+     font-size: 1.2rem;
+ }
