@@ -8,7 +8,7 @@
     gap: 4rem;
     height: 85vh;
     color: #ffffff;
-    padding: 2rem 4rem;
+    padding: 2rem 0;
 }
 
 
@@ -33,24 +33,6 @@
 
 
 /* Login Button */
-
-
-/* .footer-login-button {
-    font-size: 1.2rem;
-    font-weight: 700;
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px solid white;
-    border-radius: 25px;
-    padding: 0.75rem 1.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.footer-login-button:hover {
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-} */
 
 .footer-login-button {
     padding: 0.5rem 1rem;
