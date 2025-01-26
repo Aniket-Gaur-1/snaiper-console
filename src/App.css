@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    padding: 1rem 2.7rem;
     background-color: black;
-    color: white;
+    margin: 0;
+    padding: 0 7rem;
+    font-family: monospace;
 }

@@ -1,42 +1,76 @@
 import React from "react";
 import "../styles/process.css";
-import VerticalCards from "./VerticalCards";
 
 const Process = () => {
-  const processItems = [
-    {
-      stepNumber: "01",
-      title: "Participants",
-      description:
-        "Join tight-knit communities around your favorite creators,thoughtleaders, products, and experiences.",
-    },
-    {
-      stepNumber: "02",
-      title: "Distribution",
-      description:
-        "Sell digital products and amplify your reach through a new network typology. Manage product fulfillment with off-chain compute.",
-    },
-    {
-      stepNumber: "03",
-      title: "Revenue-Sharing",
-      description:
-        "Split royalties amongst thousands of users and seamlessly route payments across networks.",
-    },
-    {
-      stepNumber: "04",
-      title: "Ownership",
-      description:
-        "Sub-license your work and set your own terms around price, access, availability, and licensing. Manage rights with transparent, on-chain transactions across multiple blockchains.",
-    },
-  ];
-
-  console.log("Process Items:", processItems);
-
   return (
-    <div className="animated-cards">
-      {processItems?.map((item, index) => (
-        <VerticalCards key={index} item={item || {}} />
-      ))}
+    <div className="process-container">
+      <div className="process-item-container">
+        <div className="process-item">
+          <h2 className="process-step-title">NO CURE - NO PAY</h2>
+          <p className="process-step-description">
+            <span>
+              If SNAIPER doesn't deliver increased traffic on your clients web
+              page, they don’t pay.
+            </span>
+            <span>This shows how much you can trust SNAIPER</span>
+            <span>
+              We can guarantee improved ratings, improved traffic and we will
+              deliver documentation for it.
+            </span>
+            <span>
+              Implement SNAIPER at your clients web sites. There is nothing to
+              loose
+            </span>
+          </p>
+        </div>
+
+        <div className="process-item">
+          <h2 className="process-step-title">Lets make Money together</h2>
+          <p className="process-step-description">
+            SNAIPERs unique split profit model brings increased revenue, and
+            cuts man hours related to SEO work. Trust the worlds most powerful
+            AI technology to get more satisfied clients and gain profit
+          </p>
+        </div>
+
+        <div className="process-item">
+          <h2 className="process-step-title">Let SNAIPER do the dirty work</h2>
+          <p className="process-step-description">
+            <span>SNAIPER uses WATSONX and OpenAI as main engines</span>
+            <span>
+              The extreme combo of OPENAI and WATSONX and SNAIPERS algorithms
+              predicts future keywords and trends with a stunning precision.
+            </span>
+            <span>
+              Let SNAIPER do the time consuming work, for your clients to be
+              winners in the digital race
+            </span>
+          </p>
+        </div>
+
+        <div className="process-item">
+          <h2 className="process-step-title">why we created SNAIPER</h2>
+          <p className="process-step-description">
+            <span>
+              Creating, controlling and deploying SEO data takes hours.
+            </span>
+            <span>
+              To automate this work, in combination with the capacity of the
+              strongest AI computers resulted in SNAIPER
+            </span>
+            <span>
+              SNAIPER creates, predicts and deploy SEO data using automated
+              sessions.
+            </span>
+            <span>
+              SNAIPER is made of the power of IBM WATSONX, GOOGLE and OPEN AI
+            </span>
+          </p>
+        </div>
+      </div>
+      <div className="process-image">
+        <img src="" alt="img" />
+      </div>
     </div>
   );
 };

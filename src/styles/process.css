@@ -1,11 +1,53 @@
-/* .process-container {
+.process-container {
     display: flex;
     flex-direction: row;
-} */
+    height: 80vh;
+    overflow-y: scroll;
+    /* Enable scrolling */
+    color: rgb(255, 255, 255);
+}
 
-.animated-cards {
+.process-image {
+    /* background-color: blue; */
+    width: 50%;
+}
+
+.process-item-container {
+    position: relative;
+    /* Needed for sticky positioning of children */
+    height: 320vh;
+    /* Enough height to allow scrolling through all items */
+    width: 50%;
+}
+
+.process-item {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    /* gap: 2rem; */
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    /* Full viewport height */
+    padding: 0 6rem;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    /* Stick to the top of the container */
+    z-index: 1;
+    background: black;
+    /* Ensure the card background covers overlapping content */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.process-step-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.process-step-description {
+    margin: 0rem 2rem;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
 }

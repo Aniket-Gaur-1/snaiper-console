@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-header">
         <p className="footer-cta">Join the network today.</p>
-        <button className="footer-login-button">Login</button>
+        <button className="footer-login-button">Contact Us</button>
       </div>
       <div className="footer-navigation">
         <a href="#" className="footer-link">

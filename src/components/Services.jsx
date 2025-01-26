@@ -28,8 +28,9 @@ const Services = () => {
   return (
     <div className="services-section animate-on-scroll">
       <h1 className="services-heading animate-on-scroll">
-        Be Your Own Platform. Share Freely and Fairly. Participate, and Own a
-        Piece.
+        SNAIPER SEO CONSOLE is a powerful tool that automates the SEO work
+        creating keywords, metatags and blog articles generating traffic reports
+        automated updates directly to web sites at your set frequencies
       </h1>
       <div className="services-gallery">
         <div className="service-card animate-on-scroll">

@@ -1,44 +1,4 @@
-/* Brand Work Section Container */
-
-.brand-work-container {
-    height: 85vh;
-    background-color: #000000;
-    /* Matches hero section theme */
-    color: #ffffff;
-    /* White text for contrast */
-    /* padding: 3rem; */
-    /* text-align: center; */
-    /* Center aligns text content */
-    display: flex;
-    flex-direction: row;
-    gap: 25rem;
-    /* Ensure spacing between heading and description */
-    justify-content: space-evenly;
-    /* align-items: center; */
-    border-radius: 8px;
-    /* Adds a modern look */
-    /* margin-top: 220px; */
-}
-
-
 /* Brand Work Heading */
-
-.brand-work-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: aqua; */
-    font-size: 4rem;
-    /* Large, prominent heading */
-    font-weight: 500;
-    /* Bold for emphasis */
-    /* text-transform: uppercase; */
-    /* Adds a professional tone */
-    letter-spacing: 2px;
-    max-width: 500px;
-    /* Enhances readability */
-    margin: 0;
-}
 
 
 /* Brand Work Description */
@@ -98,11 +58,9 @@
 
 .brand-work-container {
     height: 85vh;
-    background-color: #000000;
-    color: #ffffff;
     display: flex;
     flex-direction: row;
-    gap: 25rem;
+    gap: 20rem;
     justify-content: space-evenly;
     border-radius: 8px;
     padding: 3rem;
@@ -111,31 +69,48 @@
     /* Center the content vertically */
     overflow: hidden;
     /* Prevents content overflow during animation */
+    color: white;
 }
 
 
 /* Brand Work Heading */
 
 .brand-work-heading {
-    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    font-size: 6.6rem;
     font-weight: 500;
-    letter-spacing: 2px;
-    max-width: 500px;
-    text-align: center;
+    text-align: right;
     /* Center-aligns the heading */
-    margin: 0;
+    letter-spacing: 2px;
+    width: 40%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 2rem;
+    /* background-color: aquamarine; */
 }
 
 
 /* Brand Work Description */
 
 .brand-work-description {
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
     line-height: 1.8;
     font-weight: 400;
-    max-width: 500px;
-    text-align: center;
-    margin: 0 auto;
+    /* max-width: 500px; */
+    width: 100%;
+    align-items: flex-start;
+    line-height: 150%;
+    /* background-color: blue; */
+    /* margin: 0 auto; */
 }
 
 

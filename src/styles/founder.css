@@ -27,12 +27,6 @@
     gap: 2rem;
 }
 
-.founder-image {
-    /* background-color: blueviolet;
-    width: 400px;
-    height: 100px; */
-}
-
 .founder-name {
     font-size: 3rem;
 }
@@ -83,7 +77,7 @@
     height: auto;
     padding: 3rem;
     gap: 5rem;
-    background-color: #000000;
+    /* background-color: #000000; */
     /* Light background for contrast */
 }
 

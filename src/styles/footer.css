@@ -1,13 +1,14 @@
 /* Footer Container */
 
 .footer {
-    color: #ffffff;
     padding: 10rem 0rem 0rem 0rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 4rem;
     height: 85vh;
+    color: #ffffff;
+    padding: 2rem 4rem;
 }
 
 
@@ -27,6 +28,7 @@
     font-size: 6rem;
     font-weight: normal;
     margin: 0;
+    color: rgb(255, 255, 255);
 }
 
 
