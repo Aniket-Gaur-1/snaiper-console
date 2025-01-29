@@ -1,0 +1,163 @@
+/* Base styles */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align the form */
+    color: rgb(255, 255, 255);
+    /* White text for better readability */
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 30px;
+    /* Rounded corners */
+    background-color: rgba(192, 192, 192, 0.4);
+    /* Transparent silver-gray with 40% opacity */
+    backdrop-filter: blur(8px);
+    /* Apply blur effect */
+    -webkit-backdrop-filter: blur(8px);
+    /* Ensure compatibility with Safari */
+}
+
+.contact-header {
+    text-align: center;
+    /* Center align the header */
+    margin-bottom: 1.5rem;
+}
+
+.contact-title {
+    font-size: 2rem;
+    /* Set title size */
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.contact-description {
+    font-size: 1rem;
+    /* Set description size */
+    margin-top: 1rem;
+    color: rgb(200, 200, 200);
+    /* Slightly lighter color for description */
+}
+
+
+/* Contact form styling */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* Gap between form fields */
+    width: 80%;
+    /* Ensure form fields expand fully */
+    max-width: 600px;
+    /* Limit the maximum width of the form for large screens */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* Small gap between label and input fields */
+}
+
+.form-label {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    /* Labels in white for contrast */
+}
+
+.form-input {
+    width: 100%;
+    /* Ensure inputs take full width */
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    /* Rounded corners for inputs */
+    background-color: rgb(0, 0, 0);
+    /* Dark background for input */
+    color: rgb(255, 253, 253);
+    /* Light text for inputs */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Light border for inputs */
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+
+/* Autofill styling fix */
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 253, 253) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus {
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 253, 253) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+
+/* Button styling */
+
+.form-button {
+    align-self: center;
+}
+
+
+/* Container Positioning */
+
+.contact-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional darker background */
+    backdrop-filter: blur(10px);
+    /* Stronger blur for aesthetic */
+    z-index: 9999;
+    /* Make sure the overlay is on top */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+
+/* For close button position */
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+    /* Make sure it's always clickable */
+}
+
+
+/* Mobile responsiveness */
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 1rem;
+        width: 90%;
+        /* Ensure the container is responsive */
+    }
+    .form-button {
+        width: 100%;
+        /* Full-width button for small screens */
+    }
+}

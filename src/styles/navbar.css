@@ -2,14 +2,9 @@
 
 .navbar {
     height: 15vh;
-    /* background-color: #111111; */
-    /* Slightly dark background for elegance */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 3rem; */
-    /* Ensure proper space on sides */
-    /* border-bottom: 1px solid #333; */
     position: sticky;
     top: 0;
     z-index: 100;

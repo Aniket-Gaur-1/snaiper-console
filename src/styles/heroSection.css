@@ -6,9 +6,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* Ensure space between top and bottom elements */
-    /* background-color: #000000; */
-    /* Blue background */
     color: #ffffff;
     /* White text for better contrast */
     padding: 0;

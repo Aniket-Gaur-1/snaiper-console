@@ -1,0 +1,14 @@
+/* Fluid component styling */
+
+.fluid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fluid-canvas {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 100%;
+}
