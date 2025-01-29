@@ -3,7 +3,7 @@ import "../styles/process.css";
 
 const Process = () => {
   return (
-    <div className="process-container">
+    <div className="process-container" id="process-section">
       <div className="process-item-container">
         <div className="process-item">
           <h2 className="process-step-title">NO CURE - NO PAY</h2>

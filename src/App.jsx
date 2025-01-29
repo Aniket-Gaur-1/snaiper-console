@@ -22,8 +22,9 @@ function App() {
       <Navbar />
       <main>
         <HeroSection />
-        <Services />
         <BrandWork />
+        <Services />
+
         <Process />
         <Founder />
       </main>

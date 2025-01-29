@@ -5,15 +5,14 @@ import Contact from "./Contact"; // Import Contact component
 const Footer = () => {
   const [isContactVisible, setIsContactVisible] = useState(false);
 
-  const toggleContactForm = () => {
-    setIsContactVisible(!isContactVisible); // Toggle form visibility
-  };
-
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer-section">
       <div className="footer-header">
         <p className="footer-cta">Join the network today.</p>
-        <button className="footer-login-button" onClick={toggleContactForm}>
+        <button
+          className="footer-login-button"
+          onClick={() => setIsContactVisible(true)}
+        >
           Contact Us
         </button>
       </div>
@@ -21,10 +20,7 @@ const Footer = () => {
       {/* Conditionally render the Contact component */}
       {isContactVisible && (
         <div className="contact-overlay">
-          <button className="close-button" onClick={toggleContactForm}>
-            &times;
-          </button>
-          <Contact />
+          <Contact onClose={() => setIsContactVisible(false)} />
         </div>
       )}
 

@@ -60,6 +60,7 @@
     flex-direction: column;
     gap: 0.5rem;
     /* Small gap between label and input fields */
+    text-align: start;
 }
 
 .form-label {

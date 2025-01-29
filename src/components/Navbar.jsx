@@ -7,7 +7,12 @@ const Navbar = () => {
   const { isAuthenticated, logout, loginWithRedirect } = useAuth0();
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
-
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <nav className="navbar">
       <div className="navbar-logo">Snaiper</div>
@@ -19,10 +24,18 @@ const Navbar = () => {
         <a href="#" className="navbar-link">
           Creators
         </a>
-        <a href="#" className="navbar-link">
+        <a
+          href="#"
+          className="navbar-link"
+          onClick={() => scrollToSection("brand-work-section")}
+        >
           About Us
         </a>
-        <a href="#" className="navbar-link">
+        <a
+          href="#footer"
+          className="navbar-link"
+          onClick={() => scrollToSection("footer-section")}
+        >
           Contact
         </a>
         <a href="#" className="navbar-link">

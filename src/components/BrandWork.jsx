@@ -24,7 +24,10 @@ const BrandWork = () => {
   }, []);
 
   return (
-    <div className="brand-work-container animate-on-scroll">
+    <div
+      className="brand-work-container animate-on-scroll"
+      id="brand-work-section"
+    >
       <h2 className="brand-work-heading animate-on-scroll">
         How does SNAIPER work?
       </h2>
