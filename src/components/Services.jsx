@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/service.css";
 
 const Services = () => {
+  const serviceRefs = useRef([]);
+
   useEffect(() => {
     const elements = document.querySelectorAll(".animate-on-scroll");
 
@@ -10,8 +12,6 @@ const Services = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
-          } else {
-            entry.target.classList.remove("visible");
           }
         });
       },
@@ -20,52 +20,57 @@ const Services = () => {
 
     elements.forEach((el) => observer.observe(el));
 
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <div className="services-section animate-on-scroll">
+    <div className="services-section">
       <h1 className="services-heading animate-on-scroll">
-        SNAIPER SEO CONSOLE is a powerful tool that automates the SEO work
-        creating keywords, metatags and blog articles generating traffic reports
-        automated updates directly to web sites at your set frequencies
+        SNAIPER SEO CONSOLE is a powerful tool that automates the SEO work,
+        creating keywords, metatags and blog articles, generating traffic
+        reports, and automated updates directly to websites at your set
+        frequencies.
       </h1>
       <div className="services-gallery">
-        <div className="service-card animate-on-scroll">
-          <img src="" alt="Participants" className="service-image" />
-          <h2 className="service-title">Participants</h2>
-          <p className="service-description">
-            Engage with your favorite creators and brands while earning
-            royalties and rewards.
-          </p>
-          <a href="" className="service-link">
-            Start Earning →
-          </a>
-        </div>
-        <div className="service-card animate-on-scroll">
-          <img src="" alt="Creators & Brands" className="service-image" />
-          <h2 className="service-title">Creators & Brands</h2>
-          <p className="service-description">
-            Empower your creative freedom by selling digital content and sharing
-            earnings with collaborators and fans with ease.
-          </p>
-          <a href="" className="service-link">
-            Start Selling →
-          </a>
-        </div>
-        <div className="service-card animate-on-scroll">
-          <img src="" alt="Enterprise" className="service-image" />
-          <h2 className="service-title">Enterprise</h2>
-          <p className="service-description">
-            Effortlessly create, sell, and manage digital products and automate
-            global payouts while enjoying low transaction fees.
-          </p>
-          <a href="" className="service-link">
-            Start Building →
-          </a>
-        </div>
+        {[
+          {
+            img: "/images/girl-image.jpg",
+            title: "Participants",
+            desc: "Engage with your favorite creators and brands while earning royalties and rewards.",
+            link: "Start Earning →",
+          },
+          {
+            img: "./images/money.jpg",
+            title: "Creators & Brands",
+            desc: "Empower your creative freedom by selling digital content and sharing earnings with collaborators and fans with ease.",
+            link: "Start Selling →",
+          },
+          {
+            img: "./images/building.jpg",
+            title: "Enterprise",
+            desc: "Effortlessly create, sell, and manage digital products and automate global payouts while enjoying low transaction fees.",
+            link: "Start Building →",
+          },
+        ].map((service, index) => (
+          <div
+            key={index}
+            className="service-card animate-on-scroll"
+            ref={(el) => (serviceRefs.current[index] = el)}
+          >
+            <div className="service-image-section">
+              <img
+                src={service.img}
+                alt={service.title}
+                className="service-image"
+              />
+            </div>
+            <h2 className="service-title">{service.title}</h2>
+            <p className="service-description">{service.desc}</p>
+            <a href="#" className="service-link">
+              {service.link}
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );

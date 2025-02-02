@@ -1,162 +1,85 @@
-@keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-
-/* Initial state for animations */
-
-.animate-on-scroll {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    animation-fill-mode: forwards;
-}
-
-
-/* Animation triggered when the element is visible */
-
-.animate-on-scroll.visible {
-    opacity: 1;
-    transform: scale(1);
-    animation: fadeInScale 0.6s ease forwards;
-}
-
-
-/* Services Section */
-
 .services-section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    overflow: hidden;
-    color: white;
+    text-align: center;
+    padding: 50px;
 }
 
 .services-heading {
-    text-align: center;
-    font-size: 2rem;
+    font-size: 24px;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+/* Now, the heading will fade in and slide up */
+
+.services-heading.visible {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .services-gallery {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .service-card {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    padding: 1.5rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background: #f9f9f9;
-    color: black;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex-basis: 30%;
-    /* Makes cards take up around 1/4th width */
-    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 
 
-/* Service Card Hover */
+/* Fade-in and slide-up effect */
+
+.service-card.visible,
+.services-heading.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* Hover effect for a smooth scale */
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
+.service-image-section {
+    display: flex;
+    height: 450px;
+}
 
-/* Service Card Title */
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
 .service-title {
     font-size: 1.8rem;
-    font-weight: bold;
+    margin: 10px 0;
 }
-
-
-/* Service Card Description */
 
 .service-description {
-    font-size: 1.4rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
 }
-
-
-/* Service Link */
 
 .service-link {
-    text-decoration: none;
     color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
     font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-.service-link:hover {
-    color: #0056b3;
-}
-
-
-/* Responsive Design */
-
-@media (max-width: 1200px) {
-    .services-heading {
-        padding: 0 4rem;
-        /* Reduce horizontal padding */
-        font-size: 2rem;
-        /* Adjust heading size */
-    }
-    .services-gallery {
-        gap: 1.5rem;
-        /* Adjust spacing between cards */
-    }
-    .service-card {
-        flex-basis: 30%;
-        /* Make each card take up 1/3rd of the container */
-    }
-}
-
-@media (max-width: 768px) {
-    .services-heading {
-        padding: 0 2rem;
-        /* Reduce padding */
-        font-size: 1.8rem;
-        /* Further reduce font size */
-    }
-    .services-gallery {
-        gap: 1rem;
-        /* Tighten the gap between cards */
-    }
-    .service-card {
-        flex-basis: 45%;
-        /* Make each card take up half width */
-    }
-}
-
-@media (max-width: 480px) {
-    .services-heading {
-        padding: 0 1rem;
-        /* Minimal padding for very small screens */
-        font-size: 1.5rem;
-        /* Smaller heading font */
-    }
-    .services-gallery {
-        gap: 1rem;
-        flex-direction: column;
-        /* Stack cards vertically */
-        align-items: center;
-        /* Center cards */
-    }
-    .service-card {
-        flex-basis: 90%;
-        /* Make each card take almost full width */
-    }
 }

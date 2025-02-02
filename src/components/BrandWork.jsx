@@ -48,7 +48,7 @@ const BrandWork = () => {
           <span>better ranking</span>
           <span>regular traffic reports as emails</span>
           <span>no cure – No pay</span>
-          <span>no increased traffic – no costs </span>
+          <span>no increased traffic – no costs</span>
         </p>
       </div>
     </div>

@@ -13,8 +13,8 @@ const Contact = ({ onClose }) => {
     try {
       // Send email using EmailJS
       const res = await emailjs.sendForm(
-        "service_cl8m13f", // The ID of your email service
-        "template_r2kqen4", // The ID of the email template
+        "service_cl8m13f", // Your email service ID
+        "template_r2kqen4", // Your email template ID
         form,
         "MABrICLOzUvTe_f3a" // Your EmailJS user ID
       );
@@ -85,7 +85,6 @@ const Contact = ({ onClose }) => {
             Submit
           </button>
         </form>
-
         {/* Display status message */}
         {formStatus && <p className="form-status">{formStatus}</p>}
       </div>

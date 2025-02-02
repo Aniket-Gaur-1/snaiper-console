@@ -1,42 +1,18 @@
-/* Brand Work Heading */
-
-
-/* Brand Work Description */
-
-.brand-work-description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: bisque; */
-    font-size: 1.5rem;
-    /* Comfortable text size for reading */
-    line-height: 1.8;
-    /* Improves readability with spacing between lines */
-    font-weight: 400;
-    /* Normal font weight */
-    max-width: 500px;
-    /* Restrict width for readability */
-    /* text-align: center; */
-    margin: 0 auto;
-    /* padding: 2rem; */
-    /* Center horizontally */
-}
+/* Animation Keyframes */
 
 @keyframes fadeInScale {
     from {
         opacity: 0;
         transform: scale(0.9);
-        /* Initial shrink effect */
     }
     to {
         opacity: 1;
         transform: scale(1);
-        /* Normal size */
     }
 }
 
 
-/* Animation initial state */
+/* Initial Animation State */
 
 .animate-on-scroll {
     opacity: 0;
@@ -45,7 +21,7 @@
 }
 
 
-/* When the element is visible */
+/* When Visible */
 
 .animate-on-scroll.visible {
     opacity: 1;
@@ -62,13 +38,10 @@
     flex-direction: row;
     gap: 20rem;
     justify-content: space-evenly;
+    align-items: center;
     border-radius: 8px;
     padding: 3rem;
-    /* Restore padding for better spacing */
-    align-items: center;
-    /* Center the content vertically */
     overflow: hidden;
-    /* Prevents content overflow during animation */
     color: white;
 }
 
@@ -79,21 +52,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: aqua; */
     font-size: 6rem;
     font-weight: 500;
     text-align: right;
-    /* Center-aligns the heading */
     letter-spacing: 2px;
     width: 40%;
 }
 
+
+/* Description Container */
+
 .description {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
     gap: 2rem;
-    /* background-color: aquamarine; */
 }
 
 
@@ -103,14 +75,10 @@
     display: flex;
     flex-direction: column;
     font-size: 1.3rem;
-    line-height: 1.8;
+    line-height: 150%;
     font-weight: 400;
-    /* max-width: 500px; */
     width: 100%;
     align-items: flex-start;
-    line-height: 150%;
-    /* background-color: blue; */
-    /* margin: 0 auto; */
 }
 
 
@@ -120,37 +88,16 @@
     .brand-work-container {
         flex-direction: column;
         padding: 2rem;
-        gap: 2rem;
-        /* Less spacing for smaller viewports */
-    }
-    .brand-work-heading {
-        font-size: 2rem;
-        letter-spacing: 1px;
-    }
-    .brand-work-description {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-}
-
-
-/* Responsive Design */
-
-@media (max-width: 768px) {
-    .brand-work-container {
-        padding: 2rem;
-        /* Reduced padding for smaller screens */
         gap: 1rem;
-        /* Less spacing on smaller viewports */
     }
     .brand-work-heading {
         font-size: 2rem;
-        /* Scales heading for mobile devices */
         letter-spacing: 1px;
+        width: 100%;
+        text-align: center;
     }
     .brand-work-description {
         font-size: 1rem;
-        /* Slightly smaller text size */
         line-height: 1.6;
     }
 }

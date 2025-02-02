@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/process.css";
+import { Canvas } from "@react-three/fiber";
+import { HexagonLoader } from "r3dy";
 
 const Process = () => {
+  const [rotation, setRotation] = useState([0, 0, 0]); // Initial rotation: [x, y, z]
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY; // Get scroll position
+      // Calculate rotation for each axis.
+      // You can adjust the divisors to change sensitivity.
+      const rotateX = (scrollY / 300) % Math.PI; // X-axis rotation
+      const rotateY = (scrollY / 400) % Math.PI; // Y-axis rotation
+      const rotateZ = (scrollY / 500) % Math.PI; // Z-axis rotation
+
+      setRotation([rotateX, rotateY, rotateZ]);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="process-container" id="process-section">
       <div className="process-item-container">
@@ -19,7 +39,7 @@ const Process = () => {
             </span>
             <span>
               Implement SNAIPER at your clients web sites. There is nothing to
-              loose
+              lose
             </span>
           </p>
         </div>
@@ -29,7 +49,7 @@ const Process = () => {
           <p className="process-step-description">
             SNAIPERs unique split profit model brings increased revenue, and
             cuts man hours related to SEO work. Trust the worlds most powerful
-            AI technology to get more satisfied clients and gain profit
+            AI technology to get more satisfied clients and gain profit.
           </p>
         </div>
 
@@ -43,7 +63,7 @@ const Process = () => {
             </span>
             <span>
               Let SNAIPER do the time consuming work, for your clients to be
-              winners in the digital race
+              winners in the digital race.
             </span>
           </p>
         </div>
@@ -56,20 +76,23 @@ const Process = () => {
             </span>
             <span>
               To automate this work, in combination with the capacity of the
-              strongest AI computers resulted in SNAIPER
+              strongest AI computers resulted in SNAIPER.
             </span>
             <span>
               SNAIPER creates, predicts and deploy SEO data using automated
               sessions.
             </span>
             <span>
-              SNAIPER is made of the power of IBM WATSONX, GOOGLE and OPEN AI
+              SNAIPER is made of the power of IBM WATSONX, GOOGLE and OPEN AI.
             </span>
           </p>
         </div>
       </div>
+
       <div className="process-image">
-        <img src="" alt="img" />
+        <Canvas>
+          <HexagonLoader scale={1} rotation={rotation} />
+        </Canvas>
       </div>
     </div>
   );

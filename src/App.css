@@ -1,10 +1,45 @@
-* {
+/* Reset and Box Sizing */
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
+
+main>* {
+    margin-bottom: 80px;
+    /* Adjust the spacing as needed */
+}
+
+
+/* Global Styles */
 
 body {
     background-color: black;
     margin: 0;
     padding: 0 8rem;
     font-family: monospace;
+    color: #fff;
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 1rem;
+    }
+}
+
+
+/* Optional: Ensure the App container fills the viewport */
+
+.App {
+    min-height: 100vh;
 }

@@ -11,8 +11,10 @@ const Navbar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      setMenuOpen(false); // close menu after scrolling on mobile
     }
   };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">Snaiper</div>
@@ -44,13 +46,13 @@ const Navbar = () => {
       </div>
 
       {isAuthenticated ? (
-        <button className="navbar-login-button" onClick={(e) => logout()}>
+        <button className="navbar-login-button" onClick={() => logout()}>
           Log Out
         </button>
       ) : (
         <button
           className="navbar-login-button"
-          onClick={(e) => loginWithRedirect()}
+          onClick={() => loginWithRedirect()}
         >
           Login
         </button>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
@@ -8,28 +8,19 @@ import BrandWork from "./components/BrandWork";
 import Process from "./components/Process";
 import Founder from "./components/Founder";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
 
 function App() {
-  const [showContact, setShowContact] = useState(false);
-
-  const toggleContactForm = () => {
-    setShowContact(!showContact); // Toggle contact form visibility
-  };
-
   return (
     <div className="App">
       <Navbar />
       <main>
         <HeroSection />
         <BrandWork />
-        <Services />
-
         <Process />
+        <Services />
         <Founder />
       </main>
-      {showContact && <Contact />}
-      <Footer toggleContactForm={toggleContactForm} />
+      <Footer />
     </div>
   );
 }
