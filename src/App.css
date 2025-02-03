@@ -18,7 +18,7 @@ body {
     background-color: black;
     margin: 0;
     padding: 0 8rem;
-    font-family: monospace;
+    font-family: "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
     color: #fff;
 }
 

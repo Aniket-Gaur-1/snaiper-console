@@ -24,6 +24,11 @@ const Process = () => {
 
   return (
     <div className="process-container" id="process-section">
+      <div className="process-image">
+        <Canvas>
+          <HexagonLoader scale={1} rotation={rotation} />
+        </Canvas>
+      </div>
       <div className="process-item-container">
         <div className="process-item">
           <h2 className="process-step-title">NO CURE - NO PAY</h2>
@@ -87,12 +92,6 @@ const Process = () => {
             </span>
           </p>
         </div>
-      </div>
-
-      <div className="process-image">
-        <Canvas>
-          <HexagonLoader scale={1} rotation={rotation} />
-        </Canvas>
       </div>
     </div>
   );

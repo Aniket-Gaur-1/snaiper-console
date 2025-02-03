@@ -10,6 +10,7 @@
     z-index: 100;
     transition: padding 0.3s ease;
     padding: 0 2rem;
+    background-color: #000;
 }
 
 
@@ -22,30 +23,6 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
-}
-
-
-/* Navbar Links Container */
-
-.navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-left: 2rem;
-}
-
-.navbar-link {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    transition: color 0.3s ease, transform 0.2s ease;
-    cursor: pointer;
-}
-
-.navbar-link:hover {
-    transform: scale(1.05);
 }
 
 
@@ -107,6 +84,52 @@
     left: 0;
     top: 0;
     border-radius: 10px;
+}
+
+
+/* Language Dropdown Styling */
+
+.language-dropdown {
+    position: relative;
+}
+
+.language-button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.language-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1;
+}
+
+.language-item {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.language-item:hover {
+    background-color: rgb(50, 48, 48);
+}
+
+.language-dropdown:hover .language-menu {
+    display: block;
 }
 
 

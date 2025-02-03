@@ -1,0 +1,67 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 85vh;
+}
+
+.canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+
+.hero-logo {
+    width: 8%;
+    margin: 0rem 0rem 4rem 0rem;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title span {
+    font-size: 6.7rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1;
+}
+
+.hero-title p {
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.hero-features {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+}
+
+.hero-title-text {
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 0;
+    text-align: right;
+}
+
+.hero-ai {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    font-size: 1.2rem;
+}

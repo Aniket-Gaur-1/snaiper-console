@@ -4,6 +4,7 @@ import "../styles/navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("English");
   const { isAuthenticated, logout, loginWithRedirect } = useAuth0();
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
@@ -11,38 +12,55 @@ const Navbar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setMenuOpen(false); // close menu after scrolling on mobile
+      setMenuOpen(false);
     }
+  };
+
+  // Handle language change
+  const handleLanguageChange = (language) => {
+    setSelectedLanguage(language);
+    console.log(`Language changed to: ${language}`);
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-logo">Snaiper</div>
 
-      <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
-        <a href="#" className="navbar-link">
-          Developers & Community
-        </a>
-        <a href="#" className="navbar-link">
-          Creators
-        </a>
-        <a
-          href="#"
-          className="navbar-link"
-          onClick={() => scrollToSection("brand-work-section")}
-        >
-          About Us
-        </a>
-        <a
-          href="#footer"
-          className="navbar-link"
-          onClick={() => scrollToSection("footer-section")}
-        >
-          Contact
-        </a>
-        <a href="#" className="navbar-link">
-          Blog
-        </a>
+      {/* Language Dropdown */}
+      <div className="language-dropdown">
+        <button className="language-button">{selectedLanguage}</button>
+        <div className="language-menu">
+          <button
+            className="language-item"
+            onClick={() => handleLanguageChange("English")}
+          >
+            English
+          </button>
+          <button
+            className="language-item"
+            onClick={() => handleLanguageChange("Spanish")}
+          >
+            Spanish
+          </button>
+          <button
+            className="language-item"
+            onClick={() => handleLanguageChange("French")}
+          >
+            French
+          </button>
+          <button
+            className="language-item"
+            onClick={() => handleLanguageChange("German")}
+          >
+            German
+          </button>
+          <button
+            className="language-item"
+            onClick={() => handleLanguageChange("Norwegian")}
+          >
+            Norwegian
+          </button>
+        </div>
       </div>
 
       {isAuthenticated ? (
