@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="hero-container">
       <div className="canvas-container">
         <Canvas>
-          <Stars radius={50} count={2500} factor={4} fade speed={2} />
+          <Stars radius={50} count={2000} factor={4} fade speed={2} />
         </Canvas>
       </div>
       <div className="hero-header">

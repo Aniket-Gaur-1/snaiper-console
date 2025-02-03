@@ -1,31 +1,20 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import "../styles/service.css";
+
+import { Stars } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 
 const Services = () => {
   const serviceRefs = useRef([]);
 
-  useEffect(() => {
-    const elements = document.querySelectorAll(".animate-on-scroll");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="services-section">
-      <h1 className="services-heading animate-on-scroll">
+      <div className="canvas-container">
+        <Canvas>
+          <Stars radius={50} count={2500} factor={4} fade speed={2} />
+        </Canvas>
+      </div>
+      <h1 className="services-heading ">
         SNAIPER SEO CONSOLE is a powerful tool that automates the SEO work,
         creating keywords, metatags and blog articles, generating traffic
         reports, and automated updates directly to websites at your set
@@ -54,7 +43,7 @@ const Services = () => {
         ].map((service, index) => (
           <div
             key={index}
-            className="service-card animate-on-scroll"
+            className="service-card "
             ref={(el) => (serviceRefs.current[index] = el)}
           >
             <div className="service-image-section">

@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
-// import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import BrandWork from "./components/BrandWork";
 import Process from "./components/Process";
@@ -16,7 +15,6 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        {/* <HeroSection /> */}
         <BrandWork />
         <Process />
         <Services />

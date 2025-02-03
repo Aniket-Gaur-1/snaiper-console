@@ -2,14 +2,13 @@ import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { useState } from "react";
 import "../styles/footer.css";
-import Contact from "./Contact"; // Import Contact component
+import Contact from "./Contact";
 
 const Footer = () => {
   const [isContactVisible, setIsContactVisible] = useState(false);
 
   return (
     <footer className="footer relative overflow-hidden" id="footer-section">
-      {/* Background Stars */}
       <div className="canvas-container">
         <Canvas>
           <Stars radius={50} count={2500} factor={4} fade speed={2} />
@@ -28,27 +27,11 @@ const Footer = () => {
           </button>
         </div>
 
-        {/* Conditionally render the Contact component */}
         {isContactVisible && (
           <div className="contact-overlay">
             <Contact onClose={() => setIsContactVisible(false)} />
           </div>
         )}
-
-        <div className="footer-navigation">
-          <a href="#" className="footer-link">
-            Developers & Community
-          </a>
-          <a href="#" className="footer-link">
-            Creators
-          </a>
-          <a href="#" className="footer-link">
-            About Us
-          </a>
-          <a href="#" className="footer-link">
-            Contact
-          </a>
-        </div>
 
         <div className="brand-name">SNAIPER CONSOLE</div>
 

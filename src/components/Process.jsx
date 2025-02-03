@@ -1,37 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/process.css";
+import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { HexagonLoader } from "r3dy";
 
 const Process = () => {
   const [rotation, setRotation] = useState([0, 0, 0]); // Initial rotation: [x, y, z]
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY; // Get scroll position
-      // Calculate rotation for each axis.
-      // You can adjust the divisors to change sensitivity.
-      const rotateX = (scrollY / 300) % Math.PI; // X-axis rotation
-      const rotateY = (scrollY / 400) % Math.PI; // Y-axis rotation
-      const rotateZ = (scrollY / 500) % Math.PI; // Z-axis rotation
-
-      setRotation([rotateX, rotateY, rotateZ]);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="process-container" id="process-section">
-      <div className="process-image">
+      <div className="canvas-container">
         <Canvas>
-          <HexagonLoader scale={1} rotation={rotation} />
+          <Stars radius={50} count={5000} factor={4} fade speed={2} />
         </Canvas>
       </div>
       <div className="process-item-container">
         <div className="process-item">
-          <h2 className="process-step-title">NO CURE - NO PAY</h2>
+          <h2 className="process-step-title">
+            <span>NO CURE</span> <span>NO PAY</span>
+          </h2>
           <p className="process-step-description">
             <span>
               If SNAIPER doesn't deliver increased traffic on your clients web
@@ -48,6 +35,11 @@ const Process = () => {
             </span>
           </p>
         </div>
+        <div className="process-image">
+          <Canvas>
+            <HexagonLoader scale={1} rotation={rotation} />
+          </Canvas>
+        </div>
 
         <div className="process-item">
           <h2 className="process-step-title">Lets make Money together</h2>
@@ -57,9 +49,14 @@ const Process = () => {
             AI technology to get more satisfied clients and gain profit.
           </p>
         </div>
+        <div className="process-image">
+          <Canvas>
+            <HexagonLoader scale={1} rotation={rotation} />
+          </Canvas>
+        </div>
 
         <div className="process-item">
-          <h2 className="process-step-title">Let SNAIPER do the dirty work</h2>
+          <h2 className="process-step-title">Let SNAIPER do the dull work</h2>
           <p className="process-step-description">
             <span>SNAIPER uses WATSONX and OpenAI as main engines</span>
             <span>
@@ -72,9 +69,14 @@ const Process = () => {
             </span>
           </p>
         </div>
+        <div className="process-image">
+          <Canvas>
+            <HexagonLoader scale={1} rotation={rotation} />
+          </Canvas>
+        </div>
 
         <div className="process-item">
-          <h2 className="process-step-title">why we created SNAIPER</h2>
+          <h2 className="process-step-title">Why We Created SNAIPER</h2>
           <p className="process-step-description">
             <span>
               Creating, controlling and deploying SEO data takes hours.

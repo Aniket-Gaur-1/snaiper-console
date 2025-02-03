@@ -1,35 +1,22 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/founder.css";
 
+import { Stars } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+
 const Founder = () => {
-  useEffect(() => {
-    const elements = document.querySelectorAll(".animate-on-scroll");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          } else {
-            entry.target.classList.remove("visible");
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div className="founder-section animate-on-scroll">
-      <h2 className="founder-heading animate-on-scroll">
+    <div className="founder-section ">
+      <div className="canvas-container">
+        <Canvas>
+          <Stars radius={50} count={2500} factor={4} fade speed={2} />
+        </Canvas>
+      </div>
+      <h2 className="founder-heading ">
         Illuminating True Human Purpose Through Technology
       </h2>
       <div className="founder-content">
-        <div className="about-founder animate-on-scroll">
+        <div className="about-founder ">
           <img
             src="./images/founder.jpg"
             alt="Founder"
@@ -38,7 +25,7 @@ const Founder = () => {
           <h1 className="founder-name">Sindre Godager</h1>
           <p className="founder">Founder, SNAIPER</p>
         </div>
-        <blockquote className="founder-quote animate-on-scroll">
+        <blockquote className="founder-quote ">
           "The multiplayer digital economy empowers smaller players to unite—
           inviting would-be consumers to become participants and bigger players
           to become powerful platforms. It's the digital equivalent of the

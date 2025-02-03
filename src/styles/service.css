@@ -1,23 +1,40 @@
 .services-section {
     text-align: center;
     padding: 50px;
+    position: relative;
+    /* Ensure the parent section is positioned correctly */
+    overflow: hidden;
+    /* Prevent any scrolling issues */
+    min-height: 100vh;
+    /* Ensure it covers the full viewport */
 }
 
 .services-heading {
     font-size: 24px;
     margin-bottom: 30px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    /* opacity: 0; */
+    /* transform: translateY(20px); */
+    /* transition: opacity 0.6s ease-out, transform 0.6s ease-out; */
+}
+
+.canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
 }
 
 
 /* Now, the heading will fade in and slide up */
 
-.services-heading.visible {
+
+/* .services-heading.visible {
     transform: translateY(0);
     opacity: 1;
-}
+} */
 
 .services-gallery {
     display: flex;
@@ -29,31 +46,33 @@
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     padding: 20px;
     width: 30%;
     text-align: center;
-    transform: translateY(40px);
-    opacity: 0;
-    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    /* transform: translateY(40px); */
+    /* opacity: 0; */
+    /* transition: transform 0.6s ease-out, opacity 0.6s ease-out; */
 }
 
 
 /* Fade-in and slide-up effect */
 
-.service-card.visible,
+
+/* .service-card.visible,
 .services-heading.visible {
     transform: translateY(0);
     opacity: 1;
-}
+} */
 
 
 /* Hover effect for a smooth scale */
 
-.service-card:hover {
+
+/* .service-card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
-}
+} */
 
 .service-image-section {
     display: flex;
