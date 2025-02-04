@@ -1,43 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../styles/process.css";
-import { Stars } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { HexagonLoader } from "r3dy";
 
 const Process = () => {
-  const [rotation, setRotation] = useState([0, 0, 0]); // Initial rotation: [x, y, z]
-  const [webGLSupported, setWebGLSupported] = useState(true);
-
-  useEffect(() => {
-    // Check if WebGL is supported in the browser
-    const checkWebGLSupport = () => {
-      const canvas = document.createElement("canvas");
-      const gl =
-        canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
-      return !!gl;
-    };
-
-    // Update WebGL support status
-    setWebGLSupported(checkWebGLSupport());
-  }, []);
-
   return (
     <div className="process-container" id="process-section">
-      {webGLSupported ? (
-        <div className="canvas-container">
-          <Canvas>
-            <Stars radius={50} count={5000} factor={4} fade speed={2} />
-          </Canvas>
-        </div>
-      ) : (
-        <div className="no-webgl-message">
-          <p>
-            Your browser does not support WebGL. Some visual elements might not
-            work as intended.
-          </p>
-        </div>
-      )}
-
       <div className="process-item-container">
         <div className="process-item">
           <h2 className="process-step-title">
@@ -59,13 +25,6 @@ const Process = () => {
             </span>
           </p>
         </div>
-        <div className="process-image">
-          {webGLSupported && (
-            <Canvas>
-              <HexagonLoader scale={1} rotation={rotation} />
-            </Canvas>
-          )}
-        </div>
 
         <div className="process-item">
           <h2 className="process-step-title">Lets make Money together</h2>
@@ -74,13 +33,6 @@ const Process = () => {
             cuts man hours related to SEO work. Trust the worlds most powerful
             AI technology to get more satisfied clients and gain profit.
           </p>
-        </div>
-        <div className="process-image">
-          {webGLSupported && (
-            <Canvas>
-              <HexagonLoader scale={1} rotation={rotation} />
-            </Canvas>
-          )}
         </div>
 
         <div className="process-item">
@@ -96,13 +48,6 @@ const Process = () => {
               winners in the digital race.
             </span>
           </p>
-        </div>
-        <div className="process-image">
-          {webGLSupported && (
-            <Canvas>
-              <HexagonLoader scale={1} rotation={rotation} />
-            </Canvas>
-          )}
         </div>
 
         <div className="process-item">
