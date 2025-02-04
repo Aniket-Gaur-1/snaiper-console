@@ -1,12 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../styles/service.css";
 
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 const Services = () => {
-  const serviceRefs = useRef([]);
-
   return (
     <div className="services-section">
       <div className="canvas-container">
@@ -14,7 +12,7 @@ const Services = () => {
           <Stars radius={50} count={2500} factor={4} fade speed={2} />
         </Canvas>
       </div>
-      <h1 className="services-heading ">
+      <h1 className="services-heading">
         SNAIPER SEO CONSOLE is a powerful tool that automates the SEO work,
         creating keywords, metatags and blog articles, generating traffic
         reports, and automated updates directly to websites at your set
@@ -41,11 +39,7 @@ const Services = () => {
             link: "Start Building →",
           },
         ].map((service, index) => (
-          <div
-            key={index}
-            className="service-card "
-            ref={(el) => (serviceRefs.current[index] = el)}
-          >
+          <div key={index} className="service-card">
             <div className="service-image-section">
               <img
                 src={service.img}
