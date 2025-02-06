@@ -4,26 +4,39 @@ import "../styles/founder.css";
 const Founder = () => {
   return (
     <div className="founder-section">
-      <h2 className="founder-heading">
-        Illuminating True Human Purpose Through Technology
-      </h2>
+      <div className="founder-heading">
+        <span>Time is Money</span>
+        <span>- also for Media Agencies</span>
+      </div>
       <div className="founder-content">
         <div className="about-founder">
           <img
-            src="./images/founder.jpg"
+            src="./images/founder.jpeg"
             alt="Founder"
             className="founder-image"
           />
           <h1 className="founder-name">Sindre Godager</h1>
-          <p className="founder">Founder, SNAIPER</p>
+          <div className="founder">
+            <span>Co Founder of</span>
+            <span>The SNAIPER SEO CONSOLE</span>
+          </div>
         </div>
         <blockquote className="founder-quote">
-          "The multiplayer digital economy empowers smaller players to unite—
-          inviting would-be consumers to become participants and bigger players
-          to become powerful platforms. It's the digital equivalent of the
-          common property rights that form corporations, but without the
-          government contracts or physical property rights enforcement that make
-          corporations possible."
+          <p>
+            The SNAIPER SEO CONSOLE is built on the idea that people should
+            focus on creative and fun work while AI engines handle the
+            time-consuming, repetitive, and dull tasks. The result? Hundreds of
+            hours freed up for more profitable work—like onboarding new clients.
+          </p>
+          <p>
+            And why not let our partners share in the success? After all, they
+            are the driving force behind SNAIPER becoming the most preferred SEO
+            console on the market.
+          </p>
+          <p>
+            And when SNAIPER is so efficient, -why not also give the clients a
+            No cure, No pay deal? We did. SNAIPER SEO CONSOLE -A triple win!
+          </p>
         </blockquote>
       </div>
     </div>

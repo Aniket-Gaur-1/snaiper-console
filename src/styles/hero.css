@@ -1,36 +1,45 @@
+/* Base styling for hero section */
+
 .hero-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 85vh;
+    height: 80vh;
+    padding: 2rem;
 }
 
-.canvas-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
+
+/* Hero Header Layout */
 
 .hero-header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 60%;
+    flex-wrap: wrap;
+    /* Ensures proper stacking on small screens */
 }
+
+
+/* Hero Logo */
 
 .hero-logo {
     width: 8%;
-    margin: 0rem 0rem 4rem 0rem;
+    margin: 0 0 4rem 0;
 }
+
+
+/* Hero Title */
 
 .hero-title {
     display: flex;
     flex-direction: column;
 }
+
+
+/* Large Title Text */
 
 .hero-title span {
     font-size: 6.7rem;
@@ -39,10 +48,16 @@
     line-height: 1;
 }
 
+
+/* Subtext */
+
 .hero-title p {
     text-align: left;
     font-size: 1.4rem;
 }
+
+
+/* Hero Features */
 
 .hero-features {
     display: flex;
@@ -51,6 +66,9 @@
     height: 20%;
 }
 
+
+/* Right-aligned text */
+
 .hero-title-text {
     font-size: 3rem;
     font-weight: 400;
@@ -58,10 +76,104 @@
     text-align: right;
 }
 
+
+/* AI Text */
+
 .hero-ai {
     display: flex;
     width: 100%;
     height: 10%;
     text-align: left;
     font-size: 1.2rem;
+}
+
+
+/* Responsive Design for Tablets */
+
+@media (max-width: 1024px) {
+    .hero-container {
+        height: auto;
+        padding: 3rem 2rem;
+    }
+    .hero-header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .hero-logo {
+        width: 12%;
+        margin: 0 0 2rem 0;
+    }
+    .hero-title span {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    .hero-title p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .hero-title-text {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+
+/* Responsive Design for Mobile */
+
+@media (max-width: 768px) {
+    .hero-container {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    .hero-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+    .hero-logo {
+        width: 20%;
+        margin-bottom: 2rem;
+    }
+    .hero-title span {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .hero-title p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .hero-title-text {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .hero-ai {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+
+/* Extra Small Screens (Phones) */
+
+@media (max-width: 480px) {
+    .hero-container {
+        padding: 1rem;
+    }
+    .hero-logo {
+        width: 25%;
+    }
+    .hero-title span {
+        font-size: 2.8rem;
+    }
+    .hero-title p {
+        font-size: 1rem;
+    }
+    .hero-title-text {
+        font-size: 1.8rem;
+    }
+    .hero-ai {
+        font-size: 0.9rem;
+    }
 }

@@ -1,0 +1,36 @@
+.snaiper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    font-size: 6rem;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 1024px) {
+    .snaiper-container {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .snaiper-container {
+        font-size: 3rem;
+    }
+    .snaiper-container span {
+        margin-bottom: 1.5rem;
+        /* Increase spacing on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .snaiper-container {
+        font-size: 2.5rem;
+    }
+    .snaiper-container span {
+        margin-bottom: 2rem;
+        /* More spacing for better readability */
+    }
+}

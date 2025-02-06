@@ -19,7 +19,7 @@ const Contact = ({ onClose }) => {
         "MABrICLOzUvTe_f3a" // Your EmailJS user ID
       );
 
-      if (res.status === 200) {
+      if (res.text === "OK") {
         setFormStatus("Success! Your message has been sent.");
         form.reset(); // Clear the form fields
       } else {
@@ -27,7 +27,7 @@ const Contact = ({ onClose }) => {
       }
     } catch (error) {
       setFormStatus("Network error. Please try again later.");
-      console.error("Error sending email: ", error);
+      console.error("Error sending email:", error);
     }
   };
 
@@ -38,54 +38,76 @@ const Contact = ({ onClose }) => {
           <X />
         </button>
         <div className="contact-header">
-          <h1 className="contact-title">Contact Us</h1>
-          <p className="contact-description">
-            Have a question or want to get in touch? Fill out the form below and
-            we will get back to you as soon as possible.
-          </p>
+          <h1 className="contact-title">
+            Yes, please provide more information.
+          </h1>
+          {/* <p className="contact-description">
+            Yes, please provide more information.
+          </p> */}
         </div>
         <form className="contact-form" onSubmit={onSubmit}>
-          <div className="form-group">
-            <label htmlFor="name" className="form-label">
-              Name
-            </label>
+          <div className="form-group names">
             <input
               type="text"
-              id="name"
-              name="name"
+              id="first_name"
+              name="first_name"
               className="form-input"
+              placeholder="Your first name"
+              required
+            />
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              className="form-input"
+              placeholder="Your last name"
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email" className="form-label">
-              Email
-            </label>
+            <input
+              type="text"
+              id="position"
+              name="position"
+              className="form-input"
+              placeholder="Your position"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <input
+              type="text"
+              id="company_url"
+              name="company_url"
+              className="form-input"
+              placeholder="Your company website (URL)"
+              required
+            />
+          </div>
+          <div className="form-group">
             <input
               type="email"
               id="email"
               name="email"
               className="form-input"
+              placeholder="Your company email"
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message" className="form-label">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
+            <input
+              type="text"
+              id="language"
+              name="language"
               className="form-input"
-              rows="5"
+              placeholder="Preferred language (Scandi, En, Ger ,Fr, Es, It)"
               required
-            ></textarea>
+            />
           </div>
           <button type="submit" className="form-button footer-login-button">
             Submit
           </button>
         </form>
-        {/* Display status message */}
         {formStatus && <p className="form-status">{formStatus}</p>}
       </div>
     </div>

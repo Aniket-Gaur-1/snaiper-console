@@ -10,7 +10,7 @@ const Footer = () => {
       {/* Foreground Content */}
       <div className="relative z-10">
         <div className="footer-header">
-          <p className="footer-cta">Join the network today.</p>
+          <p className="footer-cta">Get more Information.</p>
           <button
             className="footer-login-button"
             onClick={() => setIsContactVisible(true)}
@@ -25,9 +25,9 @@ const Footer = () => {
           </div>
         )}
 
-        <div className="brand-name">SNAIPER CONSOLE</div>
+        {/* <div className="brand-name">SNAIPER CONSOLE</div> */}
 
-        <div className="footer-meta">
+        {/* <div className="footer-meta">
           <a href="#" className="footer-meta-link">
             © SNAIPER
           </a>
@@ -37,7 +37,7 @@ const Footer = () => {
           <a href="#" className="footer-meta-link">
             Terms of Service
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

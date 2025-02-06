@@ -9,8 +9,8 @@
     justify-content: flex-start;
     height: auto;
     padding: 3rem;
-    gap: 5rem;
-    /* background-color: #000000; */
+    gap: 4rem;
+    /* Reduced gap for better spacing on smaller screens */
     position: relative;
 }
 
@@ -18,7 +18,9 @@
 /* Founder Heading */
 
 .founder-heading {
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     font-size: 3rem;
     font-weight: 500;
     line-height: 1.5;
@@ -44,7 +46,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -53,8 +55,9 @@
 
 .founder-image {
     background-color: rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    /* Slightly reduced size for better scaling */
+    height: 180px;
     border-radius: 50%;
     border: 2px solid rgb(51, 51, 51);
 }
@@ -63,13 +66,15 @@
 /* Founder Name and Title */
 
 .founder-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
 }
 
 .founder {
-    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
     color: rgb(255, 255, 255);
     text-align: center;
 }
@@ -86,12 +91,17 @@
 }
 
 
-/* Responsive Design for smaller screens */
+/* Responsive Design for Tablets */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .founder-section {
+        padding: 2rem;
+        gap: 3rem;
+    }
     .founder-heading {
-        font-size: 2rem;
-        width: 100%;
+        width: 80%;
+        /* Allows heading to take more space */
+        font-size: 2.5rem;
         text-align: center;
     }
     .founder-content {
@@ -100,8 +110,61 @@
         align-items: center;
     }
     .founder-quote {
+        width: 80%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+
+
+/* Responsive Design for Mobile */
+
+@media (max-width: 768px) {
+    .founder-section {
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+    .founder-heading {
+        font-size: 2rem;
         width: 100%;
+        text-align: center;
+    }
+    .founder-content {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .founder-image {
+        width: 150px;
+        /* Slightly smaller for better mobile fit */
+        height: 150px;
+    }
+    .founder-quote {
+        width: 90%;
         font-size: 1.2rem;
         text-align: center;
+    }
+}
+
+
+/* Extra Small Screens (Phones) */
+
+@media (max-width: 480px) {
+    .founder-section {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    .founder-heading {
+        font-size: 1.8rem;
+    }
+    .founder-quote {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .founder-name {
+        font-size: 1.5rem;
+    }
+    .founder {
+        font-size: 1rem;
     }
 }
