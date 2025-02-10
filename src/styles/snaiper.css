@@ -4,6 +4,8 @@
     justify-content: baseline;
     align-items: flex-start;
     font-size: 5rem;
+    text-align: left;
+    /* Ensure the text is aligned left by default */
 }
 
 
@@ -18,6 +20,8 @@
 @media (max-width: 768px) {
     .snaiper-container {
         font-size: 3rem;
+        text-align: center;
+        /* Center the text on smaller screens */
     }
     .snaiper-container span {
         margin-bottom: 1.5rem;
@@ -28,6 +32,8 @@
 @media (max-width: 480px) {
     .snaiper-container {
         font-size: 2.5rem;
+        text-align: center;
+        /* Center the text on smaller screens */
     }
     .snaiper-container span {
         margin-bottom: 2rem;

@@ -1,0 +1,74 @@
+{
+    "site": "SNAIPER",
+    "language": "Svenska",
+    "title": "SNAIPER SEO-KONSOLEN",
+    "subtitle": "Skapad för och använd av MEDIEBYRÅER världen över.",
+    "features": {
+        "released_time": "Släppt tid.",
+        "increased_revenue": "Ökad intäkt.",
+        "happier_clients": "Gladare kunder.",
+        "powered_by": "Drivs av WatsonX - Google - OpenAI."
+    },
+    "what_is_snaiper": {
+        "title": "Vad är SNAIPER?",
+        "description": "SNAIPER SEO-KONSOLEN är ett kraftfullt verktyg som automatiserar SEO-arbeten genom att skapa sökord, metataggar och blogginlägg, generera trafikrapporter och uppdatera webbplatser vid de intervall du anger."
+    },
+    "how_it_works": {
+        "title": "Hur fungerar SNAIPER?",
+        "steps": [
+            "Registrera kund",
+            "Välj en plan",
+            "Ange frekvens för framtida SEO-uppdateringar",
+            "Välj typ av uppdateringar: Sökord, metataggar och blogginnehåll",
+            "Ange frekvens för trafikrapporter till kunden",
+            "Klicka på 'Kör'",
+            "Logga ut"
+        ]
+    },
+    "happier_clients": {
+        "title": "Gladare kunder med mindre arbete",
+        "description": "SNAIPER levererar förbättrade SEO-innehåll till dina kunder. Deras webbplatser får mer trafik och klättrar i rankningar. Detta möjliggörs av den mest mångsidiga och kraftfulla SEO-KONSOLEN genom tiderna."
+    },
+    "automation": {
+        "title": "Låt SNAIPER göra arbetet åt dig",
+        "description": "Glöm tråkiga SEO-uppgifter. Låt SNAIPER ta hand om dem åt dig – helt automatiserat."
+    },
+    "usage": {
+        "title": "Intern eller extern användning",
+        "internal": "Använd SNAIPER för att skapa automatiserade trafikrapporter för alla kunder och distribuera dem vid angivna intervall.",
+        "external": "Ge SNAIPER till dina kunder så att de kan lyckas med ökad trafik och bättre rankningar i SEO – garanterat."
+    },
+    "guarantee": {
+        "title": "INGEN FRAMGÅNG, INGEN BETALNING",
+        "description": "Om SNAIPER inte ökar trafiken på dina kunders webbplatser behöver de inte betala. Detta visar hur mycket vi litar på SNAIPER. Vi garanterar bättre rankningar, ökad trafik och levererar bevis för detta."
+    },
+    "profit_model": {
+        "title": "Låt oss tjäna pengar tillsammans",
+        "description": "SNAIPERs unika intäktsdelningsmodell ökar inkomster och minskar arbetsbördan för SEO-uppgifter. Lita på den mest kraftfulla AI-teknologin i världen för att göra kunder nöjda och maximera vinsten."
+    },
+    "ai_power": {
+        "title": "Låt SNAIPER ta hand om det mödosamma arbetet",
+        "description": "SNAIPER använder WATSONX och OpenAI som huvudsakliga drivkrafter. Kombinationen av OPENAI, WATSONX och SNAIPERs algoritmer förutspår framtida sökord och trender med otrolig precision."
+    },
+    "why_snaiper": {
+        "title": "Varför utvecklade vi SNAIPER?",
+        "description": "Att skapa, kontrollera och tillhandahålla SEO-data tar timmar. För att automatisera detta arbete kombinerade vi kraften från de starkaste AI-datorerna – och så skapades SNAIPER."
+    },
+    "benefits": {
+        "title": "SNAIPER SEO-Konsolen & Den Tredubbla Vinsten",
+        "points": [
+            "Fokusera SEO-arbete på försäljning – gladare medarbetare",
+            "Högre intäkter och större vinster",
+            "Nöjda kunder – det bästa försäljningsteamet"
+        ]
+    },
+    "time_is_money": "Tid är pengar, även för mediebyråer",
+    "founder": {
+        "name": "Grundare: Sindre Godager",
+        "role": "Medgrundare av SNAIPER SEO-KONSOLEN",
+        "mission": "SNAIPER bygger på idén att människor ska fokusera på kreativt och spännande arbete, medan AI-maskiner tar hand om tidskrävande, repetitiva uppgifter. Resultatet? Hundratals timmar frigörs för mer lönsamt arbete, som att skaffa nya kunder."
+    },
+    "call_to_action": {
+        "title": "Få mer information"
+    }
+}

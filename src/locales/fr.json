@@ -1,0 +1,74 @@
+{
+    "site": "SNAIPER",
+    "language": "Français",
+    "title": "LA CONSOLE SEO SNAIPER",
+    "subtitle": "Créé pour et utilisé par les AGENCES MÉDIA du monde entier.",
+    "features": {
+        "released_time": "Temps libéré.",
+        "increased_revenue": "Revenu accru.",
+        "happier_clients": "Clients plus satisfaits.",
+        "powered_by": "Alimenté par WatsonX - Google - OpenAI."
+    },
+    "what_is_snaiper": {
+        "title": "Qu'est-ce que SNAIPER ?",
+        "description": "SNAIPER SEO CONSOLE est un outil puissant qui automatise le travail SEO en créant des mots-clés, des métabalises et des articles de blog, en générant des rapports de trafic et en mettant à jour les sites Web selon les fréquences définies."
+    },
+    "how_it_works": {
+        "title": "Comment fonctionne SNAIPER ?",
+        "steps": [
+            "Enregistrer un client",
+            "Choisir un plan",
+            "Définir la fréquence de mise à jour des paramètres SEO",
+            "Choisir le type de mises à jour : mots-clés, métabalises et contenu de blog",
+            "Définir la fréquence des rapports de trafic client",
+            "Cliquer sur exécuter",
+            "Se déconnecter"
+        ]
+    },
+    "happier_clients": {
+        "title": "Des clients plus satisfaits avec moins de travail",
+        "description": "SNAIPER améliore le contenu SEO de vos clients. Leurs pages Web recevront plus de trafic et monteront dans les classements. Ceci est rendu possible grâce à la console SEO la plus puissante et polyvalente jamais conçue."
+    },
+    "automation": {
+        "title": "Laissez SNAIPER faire le travail pour vous",
+        "description": "Éliminez les tâches SEO ennuyeuses. Laissez SNAIPER les gérer pour vous, en toute autonomie."
+    },
+    "usage": {
+        "title": "Utilisation interne ou externe",
+        "internal": "Utilisez SNAIPER pour créer et distribuer des rapports de trafic automatisés à tous vos clients à des fréquences définies.",
+        "external": "Offrez SNAIPER à vos clients pour les aider à devenir des leaders du SEO avec un trafic accru et un meilleur classement — garanti."
+    },
+    "guarantee": {
+        "title": "AUCUN RÉSULTAT, AUCUN PAIEMENT",
+        "description": "Si SNAIPER n'augmente pas le trafic des pages Web de vos clients, ils ne paient pas. Cela démontre à quel point nous avons confiance en SNAIPER. Nous garantissons de meilleurs classements, une augmentation du trafic et nous fournirons une documentation à l’appui."
+    },
+    "profit_model": {
+        "title": "Gagnons de l'argent ensemble",
+        "description": "Le modèle de partage des bénéfices unique de SNAIPER augmente les revenus et réduit les heures de travail consacrées au SEO. Faites confiance à la technologie IA la plus avancée au monde pour satisfaire vos clients et maximiser vos profits."
+    },
+    "ai_power": {
+        "title": "Laissez SNAIPER gérer les tâches répétitives",
+        "description": "SNAIPER utilise WATSONX et OpenAI comme moteurs principaux. La combinaison de OPENAI, WATSONX et des algorithmes de SNAIPER prédit les tendances et les mots-clés futurs avec une précision impressionnante."
+    },
+    "why_snaiper": {
+        "title": "Pourquoi avons-nous créé SNAIPER ?",
+        "description": "Créer, contrôler et déployer des données SEO prend des heures. Pour automatiser ce travail, nous avons combiné la puissance des ordinateurs IA les plus performants, ce qui a donné naissance à SNAIPER."
+    },
+    "benefits": {
+        "title": "La Console SEO SNAIPER & Le Triple Gagnant",
+        "points": [
+            "Laissez le travail SEO se concentrer sur les ventes — équipe plus heureuse",
+            "Augmentation du revenu et des bénéfices",
+            "Clients satisfaits — la meilleure équipe de vente"
+        ]
+    },
+    "time_is_money": "Le temps, c'est de l'argent, même pour les agences média",
+    "founder": {
+        "name": "Fondateur : Sindre Godager",
+        "role": "Co-fondateur de la CONSOLE SEO SNAIPER",
+        "mission": "SNAIPER est conçu sur l'idée que les gens doivent se concentrer sur un travail créatif et motivant, tandis que l'IA s'occupe des tâches répétitives et chronophages. Résultat ? Des centaines d'heures libérées pour un travail plus rentable, comme l’acquisition de nouveaux clients."
+    },
+    "call_to_action": {
+        "title": "Obtenez plus d'informations"
+    }
+}

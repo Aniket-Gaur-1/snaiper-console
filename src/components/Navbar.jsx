@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 import "../styles/navbar.css";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation(); // Destructure useTranslation hook
   const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const [menuOpen, setMenuOpen] = useState(false); // Define menuOpen state here
   const { isAuthenticated, logout, loginWithRedirect } = useAuth0();
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
@@ -17,14 +19,16 @@ const Navbar = () => {
   };
 
   // Handle language change
-  const handleLanguageChange = (language) => {
+  const handleLanguageChange = (language, languageCode) => {
     setSelectedLanguage(language);
+    i18n.changeLanguage(languageCode); // Change language in i18next with language code
     console.log(`Language changed to: ${language}`);
+    console.log(`Current language: ${i18n.language}`); // Log the current language
   };
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Snaiper</div>
+      <div className="navbar-logo">{t("SNAIPER")}</div>
 
       {/* Language Dropdown */}
       <div className="language-dropdown">
@@ -32,33 +36,33 @@ const Navbar = () => {
         <div className="language-menu">
           <button
             className="language-item"
-            onClick={() => handleLanguageChange("English")}
+            onClick={() => handleLanguageChange("English", "en")}
           >
             English
           </button>
           <button
             className="language-item"
-            onClick={() => handleLanguageChange("Spanish")}
+            onClick={() => handleLanguageChange("Spanish", "es")}
           >
             Spanish
           </button>
           <button
             className="language-item"
-            onClick={() => handleLanguageChange("French")}
+            onClick={() => handleLanguageChange("French", "fr")}
           >
             French
           </button>
           <button
             className="language-item"
-            onClick={() => handleLanguageChange("German")}
+            onClick={() => handleLanguageChange("German", "de")}
           >
             German
           </button>
           <button
             className="language-item"
-            onClick={() => handleLanguageChange("Norwegian")}
+            onClick={() => handleLanguageChange("Scandinavian", "scandinavian")}
           >
-            Norwegian
+            Scandinavian
           </button>
         </div>
       </div>
@@ -75,12 +79,6 @@ const Navbar = () => {
           Login
         </button>
       )}
-
-      <button className="navbar-burger" onClick={toggleMenu}>
-        <span className="navbar-burger-line"></span>
-        <span className="navbar-burger-line"></span>
-        <span className="navbar-burger-line"></span>
-      </button>
     </nav>
   );
 };

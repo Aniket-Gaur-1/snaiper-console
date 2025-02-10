@@ -1,0 +1,74 @@
+{
+    "site": "SNAIPER",
+    "language": "Deutsch",
+    "title": "DIE SNAIPER SEO-KONSOLE",
+    "subtitle": "Erstellt für und verwendet von MEDIENAGENTUREN weltweit.",
+    "features": {
+        "released_time": "Freigesetzte Zeit.",
+        "increased_revenue": "Erhöhter Umsatz.",
+        "happier_clients": "Zufriedenere Kunden.",
+        "powered_by": "Angetrieben von WatsonX - Google - OpenAI."
+    },
+    "what_is_snaiper": {
+        "title": "Was ist SNAIPER?",
+        "description": "Die SNAIPER SEO-KONSOLE ist ein leistungsstarkes Tool, das SEO-Arbeiten automatisiert, indem es Keywords, Metatags und Blogartikel erstellt, Traffic-Berichte generiert und Websites in den von Ihnen festgelegten Intervallen aktualisiert."
+    },
+    "how_it_works": {
+        "title": "Wie funktioniert SNAIPER?",
+        "steps": [
+            "Kunde registrieren",
+            "Einen Plan wählen",
+            "Häufigkeit der zukünftigen SEO-Updates festlegen",
+            "Art der Updates wählen: Keywords, Metatags und Blog-Inhalte",
+            "Häufigkeit der Traffic-Berichte für den Kunden festlegen",
+            "Auf 'Ausführen' klicken",
+            "Abmelden"
+        ]
+    },
+    "happier_clients": {
+        "title": "Zufriedenere Kunden bei weniger Arbeit",
+        "description": "SNAIPER liefert verbesserte SEO-Inhalte für Ihre Kunden. Ihre Webseiten erhalten mehr Traffic und steigen in den Rankings. Dies wird durch die vielseitigste und leistungsstärkste SEO-KONSOLE aller Zeiten ermöglicht."
+    },
+    "automation": {
+        "title": "Lassen Sie SNAIPER die Arbeit für Sie erledigen",
+        "description": "Vergessen Sie langweilige SEO-Aufgaben. Lassen Sie SNAIPER sie für Sie übernehmen – vollständig automatisiert."
+    },
+    "usage": {
+        "title": "Interne oder externe Nutzung",
+        "internal": "Nutzen Sie SNAIPER, um automatisierte Traffic-Berichte für alle Kunden zu erstellen und in festgelegten Intervallen zu verteilen.",
+        "external": "Stellen Sie SNAIPER Ihren Kunden zur Verfügung, damit sie mit erhöhtem Traffic und besseren Rankings im SEO erfolgreich sind – garantiert."
+    },
+    "guarantee": {
+        "title": "KEIN ERFOLG, KEINE ZAHLUNG",
+        "description": "Wenn SNAIPER den Traffic auf den Webseiten Ihrer Kunden nicht erhöht, müssen sie nicht zahlen. Dies zeigt, wie sehr wir SNAIPER vertrauen. Wir garantieren bessere Rankings, erhöhten Traffic und liefern Nachweise dafür."
+    },
+    "profit_model": {
+        "title": "Lassen Sie uns gemeinsam Geld verdienen",
+        "description": "SNAIPERs einzigartiges Gewinnbeteiligungsmodell steigert die Einnahmen und reduziert den Arbeitsaufwand für SEO-Aufgaben. Vertrauen Sie der weltweit leistungsfähigsten KI-Technologie, um Kunden zufriedenzustellen und den Gewinn zu maximieren."
+    },
+    "ai_power": {
+        "title": "Lassen Sie SNAIPER die mühsame Arbeit erledigen",
+        "description": "SNAIPER nutzt WATSONX und OpenAI als Hauptantriebe. Die Kombination aus OPENAI, WATSONX und den Algorithmen von SNAIPER sagt zukünftige Keywords und Trends mit erstaunlicher Präzision voraus."
+    },
+    "why_snaiper": {
+        "title": "Warum haben wir SNAIPER entwickelt?",
+        "description": "Das Erstellen, Kontrollieren und Bereitstellen von SEO-Daten kostet Stunden. Um diese Arbeit zu automatisieren, haben wir die Leistung der stärksten KI-Computer kombiniert – so entstand SNAIPER."
+    },
+    "benefits": {
+        "title": "Die SNAIPER SEO-Konsole & Der Dreifache Gewinn",
+        "points": [
+            "SEO-Arbeit auf den Verkauf konzentrieren – zufriedenere Mitarbeiter",
+            "Höhere Einnahmen und größere Gewinne",
+            "Zufriedene Kunden – das beste Vertriebsteam"
+        ]
+    },
+    "time_is_money": "Zeit ist Geld, auch für Medienagenturen",
+    "founder": {
+        "name": "Gründer: Sindre Godager",
+        "role": "Mitbegründer der SNAIPER SEO-KONSOLE",
+        "mission": "SNAIPER basiert auf der Idee, dass Menschen sich auf kreative und spannende Arbeiten konzentrieren sollten, während KI-Maschinen zeitaufwendige, sich wiederholende Aufgaben übernehmen. Das Ergebnis? Hunderte von Stunden werden für profitablere Arbeiten wie die Gewinnung neuer Kunden freigesetzt."
+    },
+    "call_to_action": {
+        "title": "Erhalten Sie weitere Informationen"
+    }
+}

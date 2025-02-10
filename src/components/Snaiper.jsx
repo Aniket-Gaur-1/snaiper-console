@@ -1,13 +1,16 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "../styles/snaiper.css";
 
 const Snaiper = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="snaiper-container">
-      <span>The</span>
-      <span>SNAIPER</span>
-      <span>SEO Console</span>
-      <span>& the triple win</span>
+      <span>{t("The")}</span>
+      <span>{t("SNAIPER")}</span>
+      <span>{t("SEO Console")}</span>
+      <span>{t("& the triple win")}</span>
     </div>
   );
 };

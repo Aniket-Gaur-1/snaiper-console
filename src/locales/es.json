@@ -1,0 +1,74 @@
+{
+    "site": "SNAIPER",
+    "language": "Español",
+    "title": "LA CONSOLA SEO SNAIPER",
+    "subtitle": "Creado para y utilizado por AGENCIAS DE MEDIOS en todo el mundo.",
+    "features": {
+        "released_time": "Tiempo liberado.",
+        "increased_revenue": "Ingresos aumentados.",
+        "happier_clients": "Clientes más satisfechos.",
+        "powered_by": "Impulsado por WatsonX - Google - OpenAI."
+    },
+    "what_is_snaiper": {
+        "title": "¿Qué es SNAIPER?",
+        "description": "SNAIPER SEO CONSOLE es una herramienta poderosa que automatiza el trabajo de SEO creando palabras clave, metadatos y artículos de blog, generando informes de tráfico y actualizando sitios web con la frecuencia que establezcas."
+    },
+    "how_it_works": {
+        "title": "¿Cómo funciona SNAIPER?",
+        "steps": [
+            "Registrar cliente",
+            "Elegir un plan",
+            "Establecer la frecuencia de actualización de parámetros SEO",
+            "Seleccionar el tipo de actualizaciones: palabras clave, metadatos y contenido de blog",
+            "Elegir la frecuencia de los informes de tráfico del cliente",
+            "Hacer clic en ejecutar",
+            "Cerrar sesión"
+        ]
+    },
+    "happier_clients": {
+        "title": "Clientes más felices con menos trabajo",
+        "description": "SNAIPER proporciona contenido SEO mejorado para tus clientes. Sus páginas web recibirán más tráfico y subirán en los rankings. Esto es posible gracias a la consola SEO más versátil y potente jamás creada."
+    },
+    "automation": {
+        "title": "Deja que SNAIPER haga el trabajo por ti",
+        "description": "Elimina las tareas aburridas de SEO. Deja que SNAIPER las maneje por ti, completamente automatizado."
+    },
+    "usage": {
+        "title": "Uso Interno o Externo",
+        "internal": "Usa SNAIPER para crear y distribuir informes de tráfico automatizados a todos los clientes en intervalos establecidos.",
+        "external": "Ofrece SNAIPER a tus clientes para hacerlos ganadores en SEO con más tráfico y mejores rankings, garantizado."
+    },
+    "guarantee": {
+        "title": "SIN RESULTADOS, SIN PAGO",
+        "description": "Si SNAIPER no aumenta el tráfico en las páginas web de tus clientes, no pagan. Esto demuestra nuestra confianza en SNAIPER. Garantizamos mejores posiciones en los rankings, mayor tráfico y proporcionamos documentación como prueba."
+    },
+    "profit_model": {
+        "title": "Ganemos dinero juntos",
+        "description": "El modelo único de reparto de beneficios de SNAIPER aumenta los ingresos y reduce las horas de trabajo en SEO. Confía en la tecnología de IA más avanzada del mundo para satisfacer a tus clientes y maximizar tus beneficios."
+    },
+    "ai_power": {
+        "title": "Deja que SNAIPER haga el trabajo repetitivo",
+        "description": "SNAIPER utiliza WATSONX y OpenAI como sus motores principales. La combinación de OPENAI, WATSONX y los algoritmos de SNAIPER predice tendencias y palabras clave futuras con una precisión sorprendente."
+    },
+    "why_snaiper": {
+        "title": "¿Por qué creamos SNAIPER?",
+        "description": "Crear, controlar y desplegar datos SEO lleva horas. Para automatizar este proceso, combinamos la potencia de las computadoras de IA más avanzadas, dando lugar a SNAIPER."
+    },
+    "benefits": {
+        "title": "La Consola SEO SNAIPER & El Triple Beneficio",
+        "points": [
+            "Permite que el trabajo SEO se enfoque en las ventas: empleados más felices",
+            "Aumento de ingresos y mayores ganancias",
+            "Clientes satisfechos: el mejor equipo de ventas"
+        ]
+    },
+    "time_is_money": "El tiempo es dinero, también para las agencias de medios",
+    "founder": {
+        "name": "Fundador: Sindre Godager",
+        "role": "Co-Fundador de la CONSOLA SEO SNAIPER",
+        "mission": "SNAIPER se basa en la idea de que las personas deben centrarse en el trabajo creativo y divertido, mientras que los motores de IA se encargan de las tareas repetitivas y que consumen tiempo. ¿El resultado? Cientos de horas liberadas para trabajos más rentables, como atraer nuevos clientes."
+    },
+    "call_to_action": {
+        "title": "Obtén más información"
+    }
+}

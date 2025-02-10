@@ -1,26 +1,30 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import "../styles/hero.css";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="hero-container">
       <div className="hero-header">
         <div className="hero-title">
-          <span>THE</span>
-          <span>SNIPER</span>
-          <span>SEO CONSOLE</span>
-          <p>Made for and used by MEDIA AGENCIES worldwide.</p>
+          <span>{t("THE")}</span>
+          <span>{t("SNAIPER")}</span>
+          <span>{t("SEO CONSOLE")}</span>
+          <p>{t("Made for and used by MEDIA AGENCIES worldwide.")}</p>
         </div>
       </div>
 
       <div className="hero-features">
-        <span className="hero-title-text">Released Time.</span>
-        <span className="hero-title-text">Increased Revenue.</span>
-        <span className="hero-title-text">Happier Clients.</span>
+        <span className="hero-title-text">{t("Released Time.")}</span>
+        <span className="hero-title-text">{t("Increased Revenue.")}</span>
+        <span className="hero-title-text">{t("Happier Clients.")}</span>
       </div>
 
       <div className="hero-ai">
-        <p>Powered by WatsonX - Google - OpenAI.</p>
+        <p>{t("Powered by WatsonX - Google - OpenAI.")}</p>
       </div>
     </div>
   );

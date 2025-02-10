@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { X } from "lucide-react";
+
+import { useTranslation } from "react-i18next";
 import "../styles/contact.css";
 
 const Contact = ({ onClose }) => {
+  const { t } = useTranslation();
+
   const [formStatus, setFormStatus] = useState("");
 
   const onSubmit = async (event) => {
@@ -40,6 +44,7 @@ const Contact = ({ onClose }) => {
         <div className="contact-header">
           <h1 className="contact-title">
             Yes, please provide more information.
+            {t("Yes, please provide more information.")}
           </h1>
           {/* <p className="contact-description">
             Yes, please provide more information.

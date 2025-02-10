@@ -175,7 +175,11 @@
     }
     .navbar-login-button {
         margin-top: 1rem;
-        width: 100%;
+        width: 40%;
+        padding: 0.4em 1.5em;
+        /* Adjust padding */
+        font-size: 1rem;
+        /* Adjust font size */
     }
     .navbar-burger {
         display: flex;

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../styles/footer.css";
+import { useTranslation } from "react-i18next";
 import Contact from "./Contact";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const [isContactVisible, setIsContactVisible] = useState(false);
 
   return (
@@ -10,12 +12,12 @@ const Footer = () => {
       {/* Foreground Content */}
       <div className="relative z-10">
         <div className="footer-header">
-          <p className="footer-cta">Get more Information.</p>
+          <p className="footer-cta">{"Get more Information."}</p>
           <button
             className="footer-login-button"
             onClick={() => setIsContactVisible(true)}
           >
-            Contact Us
+            {t("Contact Us")}
           </button>
         </div>
 

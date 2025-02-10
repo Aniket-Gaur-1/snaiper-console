@@ -1,0 +1,74 @@
+{
+    "site": "SNAIPER",
+    "language": "English",
+    "title": "THE SNAIPER SEO CONSOLE",
+    "subtitle": "Made for and used by MEDIA AGENCIES worldwide.",
+    "features": {
+        "released_time": "Released Time.",
+        "increased_revenue": "Increased Revenue.",
+        "happier_clients": "Happier Clients.",
+        "powered_by": "Powered by WatsonX - Google - OpenAI."
+    },
+    "what_is_snaiper": {
+        "title": "What is SNAIPER?",
+        "description": "SNAIPER SEO CONSOLE is a powerful tool that automates SEO work by creating keywords, metatags, and blog articles, generating traffic reports, and updating websites at your set frequencies."
+    },
+    "how_it_works": {
+        "title": "How does SNAIPER work?",
+        "steps": [
+            "Register client",
+            "Choose a plan",
+            "Set frequency for future updating of SEO parameters",
+            "Choose type of updates: keywords, metatags, and blog content",
+            "Choose frequency for client traffic reports",
+            "Click execute",
+            "Log out"
+        ]
+    },
+    "happier_clients": {
+        "title": "Happier clients for less work",
+        "description": "SNAIPER delivers improved SEO content to your clients. Their web pages will receive more traffic and climb the rankings. This is achieved by the most versatile and powerful SEO CONSOLE ever made."
+    },
+    "automation": {
+        "title": "Let SNAIPER do the work for you",
+        "description": "Drop the boring SEO tasks. Let SNAIPER handle them for you—fully automated."
+    },
+    "usage": {
+        "title": "Internal or External Use",
+        "internal": "Use SNAIPER to create and distribute traffic reports to all clients, automated at set frequencies.",
+        "external": "Provide SNAIPER to make your clients SEO winners with increased traffic and higher rankings—guaranteed."
+    },
+    "guarantee": {
+        "title": "NO CURE, NO PAY",
+        "description": "If SNAIPER doesn't deliver increased traffic to your clients' web pages, they don’t pay. This shows how much we trust SNAIPER. We guarantee improved rankings, increased traffic, and provide documentation for proof."
+    },
+    "profit_model": {
+        "title": "Let’s make money together",
+        "description": "SNAIPER’s unique split profit model increases revenue and cuts man-hours related to SEO work. Trust the world’s most powerful AI technology to satisfy clients and maximize profit."
+    },
+    "ai_power": {
+        "title": "Let SNAIPER do the dull work",
+        "description": "SNAIPER uses WATSONX and OpenAI as its main engines. The combination of OPENAI, WATSONX, and SNAIPER’s algorithms predicts future keywords and trends with stunning precision."
+    },
+    "why_snaiper": {
+        "title": "Why we created SNAIPER",
+        "description": "Creating, controlling, and deploying SEO data takes hours. To automate this work, we combined the power of the strongest AI computers—resulting in SNAIPER."
+    },
+    "benefits": {
+        "title": "The SNAIPER SEO Console & The Triple Win",
+        "points": [
+            "Let SEO work focus on sales—gives happier staff",
+            "Increase revenue and higher profit",
+            "Satisfied customers—the best sales team"
+        ]
+    },
+    "time_is_money": "Time is Money, also for Media Agencies",
+    "founder": {
+        "name": "Founder: Sindre Godager",
+        "role": "Co-Founder of The SNAIPER SEO CONSOLE",
+        "mission": "SNAIPER is built on the idea that people should focus on creative and fun work while AI engines handle time-consuming, repetitive tasks. The result? Hundreds of hours freed up for more profitable work—like onboarding new clients."
+    },
+    "call_to_action": {
+        "title": "Get More Information"
+    }
+}
